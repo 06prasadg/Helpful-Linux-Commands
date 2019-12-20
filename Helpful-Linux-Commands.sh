@@ -61,6 +61,7 @@ if its not running then then mysql.sock must be deleted or service mysqld stop  
 cp -avr */*/*/*/ test2/ #copying folders & insides files from folder called "test1" into test2
 
 #creating folders if you have respective file name and copying those files in those folder
+#folder should contain files named as ABC_R1_001.fastq.gz, ABC_R2_001.fastq.gz and it should have folder called Analysis for below code to work
 for file in `ls *.gz |sed 's/_R.*//g' |sort|uniq`; do mkdir Analysis/Sample_${file}; cp ${file}_R*_001.fastq.gz Analysis/Sample_${file}; echo $file >>Analysis/samples.txt; done
 
 
@@ -164,3 +165,12 @@ sort top_65_98.5_perc_identity_sub_ids.txt | uniq -cd  #uniq -cd print duplicate
 #Add extenion to the files #https://askubuntu.com/questions/485525/how-to-mass-add-file-extension
 for file in *; do echo mv -- "$file" "$file.jpg"; done
 
+
+RDP
+172.16.13.59 Username:xencenter
+Pass:xencenter
+
+homd90tb
+172.16.5.79
+prasad
+forsyth2015!
