@@ -166,11 +166,3 @@ sort top_65_98.5_perc_identity_sub_ids.txt | uniq -cd  #uniq -cd print duplicate
 for file in *; do echo mv -- "$file" "$file.jpg"; done
 
 
-RDP
-172.16.13.59 Username:xencenter
-Pass:xencenter
-
-homd90tb
-172.16.5.79
-prasad
-forsyth2015!
